@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather forecast</title>
+</head>
+<style>
+.container{
+    width: 888px;
+    height: 299px;
+    border: 3px solid grey;
+    background-color: rgb(4, 195, 185);
+}
+.container1{
+     width: 888px;
+    height: 299px;
+    border: 3px solid grey;
+    background-color: rgb(33, 161, 7);
+}
+.box{
+    background-color: yellow;
+    border-radius: 192px;
+    width: 59px;
+    height: 69px;
+    animation: sun 15s cubic-bezier(0.455, 0.03, 0.515, 0.955)  infinite alternate-reverse ;
+
+}
+@keyframes sun {
+    from{
+background-color: yellow;
+    }
+    to{
+        background-color: grey;
+        transform: translateX(888px);
+
+    }
+    
+}
+.box5{
+color:black;
+background-color: burlywood;
+
+padding: 12px;
+margin: 13px;
+
+
+
+
+}
+.box4{
+color:black;
+background-color: burlywood;
+
+padding: 12px;
+margin: 13px;
+
+
+}
+.box3{
+color:black;
+background-color: burlywood;
+
+padding: 12px;
+margin: 13px;
+
+
+}
+
+</style>
+<body>
+    <button class="mode" style="float: right; color: blue; background-color: red;text-align: center;">mode</button>
+    <div class="container">
+        <div class="box"></div>
+
+
+<div class="box5">Monday :-   81%(rain)  <button class="e">search</button></div>
+<div class="box4">Tuesday :- 20%(rain) <button class="r">search</button></div>
+<div class="box3">Wednesday :- 18%(rain) <button class="t">search</button></div>
+
+
+
+    </div>
+<div class="container1">
+    <div class="box5">Thursday :-   6%(rain)  <button class="e">search</button></div>
+<div class="box4">friday :- 6%(rain) <button class="r">search</button></div>
+<div class="box3">saurday :- 5%(rain) <button class="t">search</button></div>
+<div class="box3">sunday :- 6%(rain) <button class="t">search</button></div>
+
+
+</div>
+<div>
+    <p>
+        also you search inside it.
+    <a href="www.google.com" style="color: brown; ">Google</a>
+    </p>
+</div>
+
+
+
+
+
+<script>
+    alert("App ka mere websites me swghat hai");
+    prompt("app apna nam digiye:-")
+   let mode = document.querySelector(".mode");
+   currmode = "light";
+   mode.addEventListener("click", ()=>{
+    if(currmode==="light"){
+        currmode="dark"
+        document.body.style.background = "black";
+    }
+    else{
+        currmode ==="light"
+        document.body.style.background = "white";
+    }
+   })
+   //sec
+   let button = document.querySelector(".e");
+   button.addEventListener("click",()=>{
+    document.querySelector(".e").innerhtml = "humidity:- 5% $ "
+   })
+
+
+    
+</script>
+</body>
+</html>
